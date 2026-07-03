@@ -14,7 +14,7 @@ import { GenericPage } from './pages/GenericPage';
 export default function App() {
   return (
     <PlannerProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/Planner">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Dashboard />} />
